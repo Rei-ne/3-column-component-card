@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 h1 {
   color: hsl(0, 0%, 100%, 0.75);
@@ -16,23 +17,31 @@ p {
   font-family: "Lexend Deca", sans-serif;
   color: hsl(0, 0%, 100%, 0.75);
 }
+
 .main-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  width: 65%;
-  height: 100%;
-
-  /* height: 80%; */
-}
-
-.second-container {
   display: flex;
   border-radius: 5px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.sedan {
+.cards {
+  /* overflow: hidden; */
+
+  padding: 15px;
+}
+
+.cards img {
+  margin-bottom: 20px;
+}
+
+.cards h1 {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#sedan {
   background-color: hsl(31, 77%, 52%);
   padding: 50px;
   height: 80%;
@@ -40,7 +49,7 @@ p {
 .sedanbtn {
   color: hsl(31, 77%, 52%);
 }
-.suv {
+#suv {
   background-color: hsl(184, 100%, 22%);
   padding: 50px;
   height: 80%;
@@ -48,7 +57,7 @@ p {
 .suvbtn {
   color: hsl(184, 100%, 22%);
 }
-.Luxury {
+#luxury {
   background-color: hsl(179, 100%, 13%);
   padding: 50px;
   height: 80%;
@@ -70,4 +79,40 @@ button:hover {
   border: 1px solid white;
   background-color: inherit;
   color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    margin: auto;
+  }
+
+  .cards {
+    max-height: 500px;
+  }
+  /* .main-container {
+    margin: 0;
+    width: 307px;
+    height: 500px;
+  } */
+
+  .button {
+    margin-top: 110px;
+  }
+
+  #sedan {
+    border-radius: 10px 0 0 10px;
+  }
+
+  #luxury {
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* #suv {
+    border-radius: 0 8px 8px 0;
+  } */
 }
