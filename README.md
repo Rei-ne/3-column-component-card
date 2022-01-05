@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned about CSS flexbox and grid styles, html tags and elements.  
+I learned about CSS flexbox and grid styles, html tags and elements.
 Also learned about buttons and hover states.
 To see how you can add code snippets, see below:
 
