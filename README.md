@@ -43,8 +43,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
+I learned about CSS flexbox and grid styles, html tags and elements.  
+Also learned about buttons and hover states.
 To see how you can add code snippets, see below:
 
 ```html
@@ -53,19 +53,17 @@ To see how you can add code snippets, see below:
 
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+  button:hover {
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+  }
 }
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
 ```
 
 ### Continued development
 
-I will continue to focus on mobile responsiveness.
+I will continue to focus on mobile responsiveness for all device types.
 
 ### Useful resources
 
