@@ -6,10 +6,9 @@
 }
 body {
   background-color: hsl(0, 0, 95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  /* display: flex;
+  justify-content: center;*/
+
 }
 
 h1 {
@@ -29,9 +28,12 @@ h1 {
 }
 
 .cards {
-  height: 10%;
+
+  height: 100vh;
 }
 
+
+ 
 .flex-container {
   margin-top: 50px;
   display: flex;
@@ -42,6 +44,7 @@ h1 {
   padding: 1.5rem 15rem;
   height: 75vh;
   /* background-color: red; */
+
 }
 
 .cards img {
