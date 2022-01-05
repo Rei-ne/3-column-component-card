@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display:wght@400swap");
 
 * {
   margin: 0;
@@ -7,18 +7,19 @@
 body {
   background-color: hsl(0, 0, 95);
   /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  justify-content: center;*/
+
 }
 
 h1 {
-  color: hsl(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
 }
 
-p {
+.cards p {
   font-family: "Lexend Deca", sans-serif;
-  color: hsl(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
 }
 .attribution p {
   font-family: "Lexend Deca", sans-serif;
@@ -27,18 +28,23 @@ p {
 }
 
 .cards {
+
   height: 100vh;
 }
 
+
+ 
 .flex-container {
-  margin-top: 65px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
   overflow: hidden;
   align-items: center;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1.5rem 15rem;
+  height: 75vh;
+  /* background-color: red; */
+
 }
 
 .cards img {
@@ -46,7 +52,7 @@ p {
 }
 
 .cards h1 {
-  padding: 15px;
+  /* padding: 15px; */
   margin-bottom: 15px;
 }
 
@@ -75,13 +81,12 @@ p {
   color: hsl(179, 100%, 13%);
 }
 button {
-  height: 35px;
-  width: 55%;
   border-radius: 50px;
   border: none;
+  padding: 15px 30px;
   outline: none;
   font-family: "Lexend Deca", sans-serif;
-  margin-top: 65px;
+  margin-top: 75px;
   cursor: pointer;
 }
 button:hover {
