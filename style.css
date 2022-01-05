@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: hsl(0, 0, 95);
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  align-items: center; */
 }
+
 h1 {
   color: hsl(0, 0%, 100%, 0.75);
   font-family: "Big Shoulders Display", cursive;
@@ -17,19 +20,25 @@ p {
   font-family: "Lexend Deca", sans-serif;
   color: hsl(0, 0%, 100%, 0.75);
 }
-
-.main-container {
-  display: flex;
-  border-radius: 5px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+.attribution p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgb(17, 19, 19);
+  text-align: center;
 }
 
 .cards {
-  /* overflow: hidden; */
+  height: 100vh;
+}
 
-  padding: 15px;
+.flex-container {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
 }
 
 .cards img {
@@ -81,24 +90,14 @@ button:hover {
   color: white;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1000px) {
-  .main-container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    position: relative;
-    margin: auto;
+@media screen and (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
   }
 
   .cards {
     max-height: 500px;
   }
-  /* .main-container {
-    margin: 0;
-    width: 307px;
-    height: 500px;
-  } */
 
   .button {
     margin-top: 110px;
@@ -112,7 +111,7 @@ button:hover {
     border-radius: 0 8px 8px 0;
   }
 
-  /* #suv {
-    border-radius: 0 8px 8px 0;
-  } */
+  #suv {
+    border-radius: 0 0 0 0;
+  }
 }
